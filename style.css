@@ -1,0 +1,136 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.contenedor{
+    width: 95%;
+    max-width: 1400px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    text-align: center;
+
+    overflow-x: auto;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+h1{
+    margin-bottom: 25px;
+
+    color: #1e3a8a;
+
+    font-size: 35px;
+}
+
+/* =========================
+   TABLA
+========================= */
+
+.tabla{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+    background: #2563eb;
+
+    color: white;
+}
+
+.tabla th{
+    padding: 15px;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+/* CELDAS */
+
+.tabla td{
+    padding: 15px;
+
+    font-size: 14px;
+
+    color: #333;
+}
+
+/* FILAS */
+
+.fila1{
+    background: white;
+}
+
+.fila2{
+    background: #f3f7ff;
+}
+
+/* BORDES */
+
+.tabla th,
+.tabla td{
+    border-bottom: 1px solid #dbeafe;
+
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .contenedor{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .tabla th,
+    .tabla td{
+        padding: 10px;
+
+        font-size: 12px;
+    }
+
+}
