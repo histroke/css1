@@ -1,6 +1,4 @@
-/* =========================
-   ESTILOS GENERALES
-========================= */
+
 
 *{
     margin: 0;
@@ -12,14 +10,14 @@ body{
     min-height: 100vh;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    padding: 20px;
+    justify-content: center;
 
     font-family: Arial, sans-serif;
 
     background: linear-gradient(135deg, #4facfe, #00f2fe);
+
+    padding: 30px;
 }
 
 /* =========================
@@ -28,31 +26,28 @@ body{
 
 .contenedor{
     width: 95%;
-    max-width: 1400px;
+    max-width: 1200px;
 
     background: white;
-
-    padding: 30px;
-
-    border-radius: 20px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid red; border-radius: 20px
+    
+    padding:30px;
 
     text-align: center;
 
-    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* =========================
-   TITULO
-========================= */
+/* TITULOS */
 
 h1{
-    margin-bottom: 25px;
-
+    margin-bottom: 20px;
     color: #1e3a8a;
+}
 
-    font-size: 35px;
+h2{
+    margin: 20px 0 10px;
+    color: #2563eb;
 }
 
 /* =========================
@@ -61,76 +56,102 @@ h1{
 
 .tabla{
     width: 100%;
-
-    border-collapse: collapse;
-
-    border-radius: 15px;
-
-    overflow: hidden;
+    background: white;
 }
 
 /* ENCABEZADO */
 
 .encabezado{
     background: #2563eb;
-
+   
     color: white;
-}
 
-.tabla th{
-    padding: 15px;
 
-    font-size: 15px;
-
-    letter-spacing: 1px;
-}
-
-/* CELDAS */
-
-.tabla td{
-    padding: 15px;
-
-    font-size: 14px;
-
-    color: #333;
 }
 
 /* FILAS */
 
 .fila1{
-    background: white;
+    background: rgb(247, 247, 247);
 }
 
 .fila2{
     background: #f3f7ff;
 }
 
-/* BORDES */
+/* TEXTO */
 
 .tabla th,
 .tabla td{
-    border-bottom: 1px solid #dbeafe;
+
 
     text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border: 3px solid rgb(85, 28, 241); border-radius: 20px
+}
+.img-box{
+    width: 120px;
+    height: 120px;
+
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f3f7ff;
 }
 
-/* RESPONSIVE */
+/* imagen dentro del recuadro */
+.img-box{
+    width: 250px;
+    height: 250px;
 
-@media(max-width:768px){
+    border: 2px solid #2563eb;
+    border-radius: 12px;
 
-    .contenedor{
-        padding: 15px;
-    }
+    overflow: hidden;
 
-    h1{
-        font-size: 24px;
-    }
+    display: flex;
+}
+.img-box img{
+    width: 200%;
+    height: 200%;
 
-    .tabla th,
-    .tabla td{
-        padding: 10px;
+    object-fit: cover; /* 👈 clave para llenar el recuadro */
 
-        font-size: 12px;
-    }
+    display: block;
+}
+.imgen-superpuesta{
 
+    width: 100px;
+    height: 100px;
+    margin: 40px auto;
+    border: 4px solid #2563eb;
+    border-radius: 50%;
+    background-color: #f3f7ff;
+    background-image: 
+        url('spider-1539583_1280.jpg'),
+        url(image.png),
+        url(bosque-cerrado_00000000_32cafe88_230530102928_1200x630.jpg);
+    background-repeat: 
+    
+    no-repeat,
+    no-repeat,
+    no-repeat;
+    background-size: 
+    110% 100%, 
+    110% 100%, cover;
+
+        background-position: 
+        center, 
+        center, 
+        center; 
+
+    box-shadow:
+    0px 10px 25px rgba(0, 0, 0, 0.2);
 }
