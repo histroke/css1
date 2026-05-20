@@ -29,9 +29,9 @@ body{
     max-width: 1200px;
 
     background: white;
-    border: 3px solid red; border-radius: 20px
+    border: 3px solid red; border-radius: 20px;
     
-    padding:30px;
+    padding: 30px;
 
     text-align: center;
 
@@ -89,6 +89,67 @@ h2{
     padding: 10px;
     font-size: 14px;
     border: 3px solid rgb(85, 28, 241); border-radius: 20px
+}
+
+/* =========================
+   GALERÍA DE IMÁGENES
+========================= */
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card-img{
+    width: 280px;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-img h3{
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.img{
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    border: 4px solid #2563eb;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================
+   EFECTO ZOOM
+========================= */
+
+.zoom{
+    background-image: url('spider-1539583_1280.jpg');
+    background-size: 180%;
+}
+
+/* =========================
+   IMAGEN SUPER ANCHA
+========================= */
+
+.ancha{
+    background-image: url('bosque-cerrado_00000000_32cafe88_230530102928_1200x630.jpg');
+    background-size: 250% 100%;
+}
+
+/* =========================
+   COVER PERFECTO
+========================= */
+
+.cover{
+    background-image: url('image.png');
+    background-size: cover;
 }
 .img-box{
     width: 120px;
