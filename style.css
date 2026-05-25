@@ -1,218 +1,444 @@
-
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-    min-height: 100vh;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
 
-    display: flex;
+    font-family:Arial, sans-serif;
 
-    justify-content: center;
+    background:linear-gradient(
+        135deg,
+        #4facfe,
+        #00f2fe
+    );
 
-    font-family: Arial, sans-serif;
-
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-
-    padding: 30px;
+    padding:30px;
 }
 
-/* =========================
-   CONTENEDOR
-========================= */
+/* CONTENEDOR */
 
 .contenedor{
-    width: 95%;
-    max-width: 1200px;
+    width:95%;
+    max-width:1200px;
 
-    background: white;
-    border: 3px solid red; border-radius: 20px;
-    
-    padding: 30px;
+    background:white;
 
-    text-align: center;
+    border-radius:25px;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.2);
 }
 
 /* TITULOS */
 
 h1{
-    margin-bottom: 20px;
-    color: #1e3a8a;
+    margin-bottom:20px;
+    color:#1e3a8a;
 }
 
 h2{
-    margin: 20px 0 10px;
-    color: #2563eb;
+    margin:40px 0 20px;
+    color:#2563eb;
 }
 
-/* =========================
-   TABLA
-========================= */
+/* TABLAS */
 
 .tabla{
-    width: 100%;
-    background: white;
-}
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
 
-/* ENCABEZADO */
+    margin-bottom:30px;
+
+    border-radius:20px;
+}
 
 .encabezado{
-    background: #2563eb;
-   
-    color: white;
-
-
+    background:#2563eb;
+    color:white;
 }
-
-/* FILAS */
-
-.fila1{
-    background: rgb(247, 247, 247);
-}
-
-.fila2{
-    background: #f3f7ff;
-}
-
-/* TEXTO */
 
 .tabla th,
 .tabla td{
-
-
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    border: 3px solid rgb(85, 28, 241); border-radius: 20px
+    padding:14px;
+    border:2px solid #4f46e5;
 }
 
-/* =========================
-   GALERÍA DE IMÁGENES
-========================= */
+.fila1{
+    background:#f8fafc;
+}
+
+.fila2{
+    background:#eef4ff;
+}
+
+/* GALERIA */
 
 .galeria{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
+/* CARD */
+
 .card-img{
-    width: 280px;
-    background: white;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    width:280px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.2);
 }
 
 .card-img h3{
-    margin-bottom: 15px;
-    color: #2563eb;
+    margin-bottom:15px;
+    color:#2563eb;
 }
+
+/* IMAGENES */
 
 .img{
-    width: 100%;
-    height: 220px;
-    border-radius: 15px;
-    border: 4px solid #2563eb;
-    background-position: center;
-    background-repeat: no-repeat;
+    width:100%;
+    height:220px;
+
+    border-radius:15px;
+
+    border:4px solid #2563eb;
+
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-/* =========================
-   EFECTO ZOOM
-========================= */
+/* ZOOM */
 
 .zoom{
-    background-image: url('spider-1539583_1280.jpg');
-    background-size: 180%;
+    background-image:url('spider-1539583_1280.jpg');
+    background-size:180%;
 }
 
-/* =========================
-   IMAGEN SUPER ANCHA
-========================= */
+/* ANCHA */
 
 .ancha{
-    background-image: url('bosque-cerrado_00000000_32cafe88_230530102928_1200x630.jpg');
-    background-size: 250% 100%;
+    background-image:url('bosque-cerrado_00000000_32cafe88_230530102928_1200x630.jpg');
+    background-size:250% 100%;
 }
 
-/* =========================
-   COVER PERFECTO
-========================= */
+/* COVER */
 
 .cover{
-    background-image: url('image.png');
-    background-size: cover;
-}
-.img-box{
-    width: 120px;
-    height: 120px;
-
-    border: 2px solid #2563eb;
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: #f3f7ff;
+    background-image:url('image.png');
+    background-size:cover;
 }
 
-/* imagen dentro del recuadro */
-.img-box{
-    width: 250px;
-    height: 250px;
+/* CONIC */
 
-    border: 2px solid #2563eb;
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    display: flex;
+.sola{
+    background:
+        conic-gradient(
+            blue,
+            white,
+            red,
+            blue
+        );
 }
-.img-box img{
-    width: 200%;
-    height: 200%;
 
-    object-fit: cover; /* 👈 clave para llenar el recuadro */
+/* SUNSET */
 
-    display: block;
+.sunset{
+    background:
+
+    radial-gradient(
+        circle at center,
+        #ffe066 10%,
+        #ff8c42 30%,
+        transparent 50%
+    ),
+
+    linear-gradient(
+        to bottom,
+        #f7d25c,
+        #ff8c42,
+        #8b2d5a,
+        #2c1b47
+    );
 }
-.imgen-superpuesta{
 
-    width: 100px;
-    height: 100px;
-    margin: 40px auto;
-    border: 4px solid #2563eb;
-    border-radius: 50%;
-    background-color: #f3f7ff;
-    background-image: 
-        url('spider-1539583_1280.jpg'),
-        url(image.png),
-        url(bosque-cerrado_00000000_32cafe88_230530102928_1200x630.jpg);
-    background-repeat: 
-    
-    no-repeat,
-    no-repeat,
-    no-repeat;
-    background-size: 
-    110% 100%, 
-    110% 100%, cover;
+/* FONDO */
 
-        background-position: 
-        center, 
-        center, 
-        center; 
+.nose{
+    background:
+        linear-gradient(
+            -10deg,
+            rgba(255,255,255,.6) 20%,
+            transparent 20%
+        ),
+
+        url('./image.png');
+
+    background-size:cover;
+}
+
+/* OCTAGONO */
+
+/* =========================
+   OCTAGONO MELO 🔥
+========================= */
+
+.octagon{
+
+    position:relative;
+
+    width:220px;
+    height:220px;
+
+    margin:auto;
+
+    overflow:hidden;
+
+    clip-path:polygon(
+        30% 0%,
+        70% 0%,
+        100% 30%,
+        100% 70%,
+        70% 100%,
+        30% 100%,
+        0% 70%,
+        0% 30%
+    );
 
     box-shadow:
-    0px 10px 25px rgba(0, 0, 0, 0.2);
+        0 10px 30px rgba(0,0,0,.35);
+}
+
+/* IMAGEN */
+
+.octagon::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        url('spider-1539583_1280.jpg')
+        center/cover no-repeat;
+
+    /* DESVANECIDO HACIA LOS BORDES */
+
+    mask-image:radial-gradient(
+        circle,
+
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,.9) 40%,
+        rgba(0,0,0,.55) 65%,
+
+        transparent 100%
+    );
+
+    -webkit-mask-image:radial-gradient(
+        circle,
+
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,.9) 40%,
+        rgba(0,0,0,.55) 65%,
+
+        transparent 100%
+    );
+
+    filter:
+        brightness(.95)
+        contrast(1.1);
+}
+
+/* BORDE RGB */
+
+.octagon::after{
+
+    content:"";
+
+    position:absolute;
+    inset:-3px;
+
+    z-index:-1;
+
+    background:linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+
+    background-size:400%;
+
+    animation:rgb 8s linear infinite;
+
+    filter:blur(12px);
+}
+
+/* HERO VALORANT */
+
+.hero-melo{
+
+    position:relative;
+    overflow:hidden;
+
+    padding:90px 40px;
+
+    border-radius:25px;
+
+    margin-bottom:40px;
+
+    color:white;
+
+    text-shadow:
+        2px 2px 10px rgba(0,0,0,.8);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,70,85,.45),
+            rgba(15,25,35,.8)
+        );
+}
+
+.hero-melo::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        url('https://images8.alphacoders.com/114/1142372.jpg')
+        center/cover no-repeat;
+
+    filter:
+        brightness(.6)
+        saturate(1.2);
+
+    z-index:0;
+
+    mask-image:radial-gradient(
+        circle,
+        rgba(0,0,0,1) 30%,
+        rgba(0,0,0,.7) 60%,
+        transparent 100%
+    );
+
+    -webkit-mask-image:radial-gradient(
+        circle,
+        rgba(0,0,0,1) 30%,
+        rgba(0,0,0,.7) 60%,
+        transparent 100%
+    );
+}
+
+.hero-melo *{
+    position:relative;
+    z-index:1;
+}
+
+.hero-melo h1{
+    font-size:70px;
+    color:#ff4655;
+    letter-spacing:4px;
+}
+
+.hero-melo p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+/* BOTON RGB */
+
+.btn-melo{
+
+    position:relative;
+
+    padding:18px 45px;
+
+    border:none;
+    border-radius:18px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:#111827;
+
+    overflow:hidden;
+
+    z-index:1;
+
+    transition:.3s;
+}
+
+.btn-melo::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-5px;
+
+    z-index:-1;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+
+    background-size:400%;
+
+    filter:blur(15px);
+
+    animation:rgb 8s linear infinite;
+}
+
+.btn-melo:hover{
+    transform:scale(1.08);
+}
+
+@keyframes rgb{
+
+    0%{
+        background-position:0 0;
+    }
+
+    100%{
+        background-position:400% 0;
+    }
 }
