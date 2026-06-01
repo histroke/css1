@@ -137,6 +137,7 @@ h2{
 .ancha{
     background-image:url('bosque-cerrado_00000000_32cafe88_230530102928_1200x630.jpg');
     background-size:250% 100%;
+    inset: black 0px 10px 100px;
 }
 
 /* COVER */
@@ -144,6 +145,7 @@ h2{
 .cover{
     background-image:url('image.png');
     background-size:cover;
+    box-shadow: black 0px 10px 50px;
 }
 
 /* CONIC */
@@ -236,7 +238,7 @@ h2{
     inset:0;
 
     background:
-        url('spider-1539583_1280.jpg')
+        url(9rur41socqn71.jpg)
         center/cover no-repeat;
 
     /* DESVANECIDO HACIA LOS BORDES */
@@ -330,7 +332,7 @@ h2{
     inset:0;
 
     background:
-        url('https://images8.alphacoders.com/114/1142372.jpg')
+        url(maxresdefault.jpg)
         center/cover no-repeat;
 
     filter:
@@ -352,6 +354,7 @@ h2{
         rgba(0,0,0,.7) 60%,
         transparent 100%
     );
+    ;
 }
 
 .hero-melo *{
@@ -395,6 +398,7 @@ h2{
     z-index:1;
 
     transition:.3s;
+    transform:perspective(500px) rotateX(10deg);
 }
 
 .btn-melo::before{
@@ -426,6 +430,7 @@ h2{
     filter:blur(15px);
 
     animation:rgb 8s linear infinite;
+    transform:perspective(500px) rotateX(50deg);
 }
 
 .btn-melo:hover{
@@ -442,3 +447,149 @@ h2{
         background-position:400% 0;
     }
 }
+.hero-melo h1{
+    font-size:70px;
+    color:#ff4655;
+    letter-spacing:4px;
+
+    display:inline-block;
+
+    transform:perspective(500px) rotateX(50deg);
+
+    text-transform:uppercase;
+}
+
+.contenedor-logo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* TRIÁNGULO */
+
+.triangulo{
+    width:250px;
+    height:250px;
+
+    background-image:url('9010.jpg');
+    
+    background-position:center ;
+    background-size:250px;
+    background-repeat:no-repeat;
+    background-color:white;
+
+    
+
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    
+
+    z-index:2;
+}
+
+/* CÍRCULO */
+
+.circulo{
+    background-image: url(mundo.webp);
+    width:350px;
+    height:350px;
+    transform:perspective(500px) rotateX(75deg);
+
+    border-radius:50%;
+  
+    /* Lo sube para pegarlo al triángulo */
+    margin-top:-170px;
+    margin-left:20px;
+
+    z-index:1;
+}
+ h1 {
+  text-shadow: 1px 1px red, -1px -1px blue;
+}
+
+.btn-mele{
+
+    position:relative;
+
+    padding:18px 45px;
+
+    border:none;
+    border-radius:18px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:#111827;
+
+    overflow:hidden;
+
+    z-index:1;
+
+    transition:.3s;
+    transform:perspective(500px) rotateX(10deg);
+}
+
+.btn-mele::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-5px;
+
+    z-index:-1;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+
+    background-size:400%;
+
+    filter:blur(15px);
+
+    animation:rgb 8s linear infinite;
+    transform:perspective(500px) rotateX(50deg);
+}
+
+.btn-mele:hover{
+    transform:scale(1.08);
+}
+
+@keyframes rgb{
+
+    0%{
+        background-position:0 0;
+    }
+
+    100%{
+        background-position:400% 0;
+    }
+}
+.hero-mele h1{
+    font-size:70px;
+    color:#ff4655;
+    letter-spacing:4px;
+
+    display:inline-block;
+
+    transform:perspective(500px) rotateX(50deg);
+
+    text-transform:uppercase;
+}
+
+
+
+
